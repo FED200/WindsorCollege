@@ -1,0 +1,196 @@
+//btn
+.btn {
+    @include font-size(0.9375rem);
+    border-radius: 0;
+    text-transform: uppercase;
+    border-radius: 2px solid transparent;
+    font-family: $font-oswald;
+    font-weight: 700;
+    transition: all 0.3s;
+
+    [class*='icon-'] {
+        position: relative;
+        top: -1px;
+        line-height: 1;
+        padding-left: 0.2rem;
+        @include font-size(0.75rem);
+    }
+
+    &.btn-primary {
+        background-color: $red;
+        min-width: 140px;
+        padding: 0.5rem;
+        border-color: transparent;
+
+        @include media-breakpoint-up(lg) {
+            min-width: 150px;
+            padding: 0.6282rem 0.8rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-width: 165px;
+            padding: 0.8282rem 0.8rem;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            min-width: 172px;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: $white;
+            color: $red;
+            border-color: $red;
+        }
+
+
+        &--sm {
+            min-width: 90px;
+            @include font-size(0.75rem);
+            padding: 0.4063rem 0.5rem;
+
+            @include media-breakpoint-up(lg) {
+                min-width: 100px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                min-width: 113px;
+            }
+
+
+        }
+
+        &--md {
+            min-width: 135px;
+            @include font-size(0.75rem);
+            padding: 0.4063rem 0.5rem;
+
+            @include media-breakpoint-up(lg) {
+                min-width: 150px;
+                padding: 0.6752rem 0.5rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                min-width: 166px;
+                padding: 0.8752rem 0.5rem;
+            }
+        }
+
+        &--lg {
+            min-width: 150px;
+            padding: 0.5rem;
+
+            @include media-breakpoint-up(lg) {
+                min-width: 160px;
+                padding: 0.6282rem 0.8rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                min-width: 172px;
+                padding: 0.8282rem 0.8rem;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                min-width: 185px;
+                padding: 1.0782rem 0.8rem;
+            }
+        }
+
+        &--xl {
+            min-width: 160px;
+            padding: 0.5rem;
+
+            @include media-breakpoint-up(lg) {
+                min-width: 175px;
+                padding: 0.6282rem 0.8rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                min-width: 185px;
+                padding: 0.8282rem 0.8rem;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                min-width: 202px;
+                padding: 1.0782rem 0.8rem;
+            }
+        }
+    }
+
+    &.btn-outline {
+        // background-color: $red;
+        min-width: 120px;
+        padding: 0.5rem;
+        border-color: $white;
+        color: $white;
+
+        @include media-breakpoint-up(lg) {
+            min-width: 125px;
+            padding: 0.4156rem 0.8rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-width: 135px;
+            padding: 0.5156rem 0.8rem;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            min-width: 138px;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: $white;
+            color: $red;
+            border-color: $red;
+        }
+
+        &--alt {
+            min-width: 140px;
+            padding: 0.5rem;
+
+            @include media-breakpoint-up(lg) {
+                min-width: 150px;
+                padding: 0.6282rem 0.8rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                min-width: 165px;
+                padding: 0.8282rem 0.8rem;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                min-width: 172px;
+            }
+        }
+
+        &--lg {
+            border-color: $dark-gray;
+            color: $dark-gray;
+            min-width: 150px;
+            padding: 0.5rem;
+
+            @include media-breakpoint-up(lg) {
+                min-width: 160px;
+                padding: 0.6282rem 0.8rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                min-width: 180px;
+                padding: 0.8rem;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                min-width: 201px;
+                padding: 1.0157rem 0.8rem;
+            }
+
+            &:focus,
+            &:hover {
+                background-color: $black;
+                color: $white;
+                border-color: transparent;
+            }
+        }
+    }
+}

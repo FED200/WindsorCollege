@@ -1,0 +1,25 @@
+//block-title
+.block-title {
+    h2 {
+        font-family: $font-oswald;
+        font-weight: 600;
+        color: $black;
+        @include font-size(1.8rem);
+
+        @include media-breakpoint-up(md) {
+            @include font-size(2rem);
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(2.7rem);
+        }
+
+        @include media-breakpoint-up(xl) {
+            @include font-size(3.25rem);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            @include font-size(3.75rem);
+        }
+    }
+}

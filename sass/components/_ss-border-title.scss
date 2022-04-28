@@ -1,0 +1,153 @@
+//border-title
+.border {
+
+    &-text {
+        background-color: black;
+        color: $white;
+        line-height: 34px;
+        position: relative;
+        max-width: 768px;
+
+        @include media-breakpoint-up(xl) {
+            @include font-size(1.25rem);
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 7px;
+            background: $bright-orange;
+
+        }
+
+        &__content {
+            padding: 0.5rem 0.5rem 0.5rem;
+            padding-left: 1rem;
+
+            @include media-breakpoint-up(lg) {
+                padding-left: 1.8125rem;
+            }
+
+            h1 {
+                font-family: $font-oswald;
+                font-weight: 600;
+                @include font-size(2.1rem);
+                text-transform: uppercase;
+
+                @include media-breakpoint-up(md) {
+                    @include font-size(2.8rem);
+                }
+
+                @include media-breakpoint-up(lg) {
+                    @include font-size(3rem);
+                }
+
+                @include media-breakpoint-up(xl) {
+                    @include font-size(3.75rem);
+                }
+
+                @include media-breakpoint-up(xxl) {
+                    @include font-size(4.0625rem);
+                }
+            }
+        }
+    }
+
+    &-title {
+        display: inline-block;
+        color: $black;
+        line-height: 34px;
+        position: relative;
+
+        @include media-breakpoint-up(xl) {
+            @include font-size(1.25rem);
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 7px;
+            background: $bright-orange;
+
+        }
+
+        &__content {
+            padding: 0.5rem 0.5rem 0.5rem;
+            padding-left: 1rem;
+
+            @include media-breakpoint-up(lg) {
+                padding-left: 1.8125rem;
+            }
+
+            h2 {
+                font-family: $font-oswald;
+                font-weight: 600;
+                @include font-size(2.1rem);
+                text-transform: capitalize;
+
+                @include media-breakpoint-up(md) {
+                    @include font-size(2.8rem);
+                }
+
+                @include media-breakpoint-up(lg) {
+                    @include font-size(3rem);
+                }
+
+                @include media-breakpoint-up(xl) {
+                    @include font-size(3.75rem);
+                }
+
+                @include media-breakpoint-up(xxl) {
+                    @include font-size(4.625rem);
+                }
+
+                br {
+                    @include media-breakpoint-down(lg) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &--white {
+            background: #000;
+
+            .border-title__content {
+                h2 {
+                    color: $white;
+                }
+            }
+        }
+
+        &--alt {
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 7px;
+                background: $bright-orange;
+            }
+
+            .border-title__content {
+                text-align: right;
+                padding-right: 1rem;
+
+                @include media-breakpoint-up(lg) {
+                    padding-right: 1.8125rem;
+                }
+            }
+        }
+    }
+}
