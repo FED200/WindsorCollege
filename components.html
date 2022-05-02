@@ -11,6 +11,8 @@
         rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="vendors/slick/slick.css">
     <link rel="stylesheet" href="style.css">
     <title>components</title>
 </head>
@@ -491,11 +493,157 @@
                     </div><!-- / .card-media -->
                 </div><!-- / .courses-slider__item -->
             </div><!-- / .courses-slider -->
+            <hr>
+            <hr>
+            <h2>.tile-icon</h2>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="tile-icon">
+                        <picture class="tile-icon__media mb-1">
+                            <source srcset="assets/images/cambridge.webp" type="image/webp">
+                            <source srcset="assets/images/cambridge.png" type="image/png">
+                            <img src="assets/images/cambridge.png" width="208" height="44" loading="lazy" alt="Partner logo">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <hr>
+            <h2>.card-event</h2>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card-event">
+                        <picture class="tile-icon__media mb-1">
+                            <source srcset="assets/images/event01.webp" type="image/webp">
+                            <source srcset="assets/images/event01.jpg" type="image/jpg">
+                            <img src="assets/images/event01.jpg" width="419" height="424" loading="lazy" alt="Event image">
+                        </picture>
+                        <div class="card-event__body text-center">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn btn-primary btn-primary--sm">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div><!-- / .container -->
+
+
+        <section class="pt-1 pb-xl-6 pb-lg-4 pb-sm-3 pb-2">
+            <div class="container">
+                <div class="block-title text-center pb-2">
+                    <h2>Our Global Partners</h2>
+                </div><!-- / .block-title -->
+                <div class="slider-col-4">
+                    <div class="item">
+                        <div class="tile-icon">
+                            <picture class="tile-icon__media mb-1">
+                                <source srcset="assets/images/cambridge.webp" type="image/webp">
+                                <source srcset="assets/images/cambridge.png" type="image/png">
+                                <img src="assets/images/cambridge.png" width="208" height="44" loading="lazy" alt="Partner logo">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="tile-icon">
+                            <picture class="tile-icon__media mb-1">
+                                <source srcset="assets/images/wisconsin.webp" type="image/webp">
+                                <source srcset="assets/images/wisconsin.png" type="image/png">
+                                <img src="assets/images/wisconsin.png" width="220" height="67" loading="lazy" alt="Partner logo">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="tile-icon">
+                            <picture class="tile-icon__media mb-1">
+                                <source srcset="assets/images/houston.webp" type="image/webp">
+                                <source srcset="assets/images/houston.png" type="image/png">
+                                <img src="assets/images/houston.png" width="166" height="44" loading="lazy" alt="Partner logo">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="tile-icon">
+                            <picture class="tile-icon__media mb-1">
+                                <source srcset="assets/images/west-virginia.webp" type="image/webp">
+                                <source srcset="assets/images/west-virginia.png" type="image/png">
+                                <img src="assets/images/west-virginia.png" width="258" height="39" loading="lazy" alt="Partner logo">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main> <!-- / .site-content -->
 
-    <footer id="footer" class="site-footer">
-
+    <footer id="footer" class="site-footer pt-xl-4 pt-sm-3 pt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-sm-7 pb-lg-0 pb-md-2 pb-1">
+                    <div class="footer-item text-sm-left text-center">
+                        <h3 class="mb-xl-3 mb-lg-2 mb-1">About</h3>
+                        <p>To be a world-class college in Nepal offering international qualifications equipping our graduates with the knowledge.</p>
+                    </div>
+                </div>
+                <div class="offset-xl-1 col-xl-2 col-lg-3 col-sm-5 pb-lg-0 pb-md-2 pb-1">
+                    <div class="footer-item text-sm-left text-center">
+                        <h3 class="mb-xl-3 mb-lg-2 mb-1">Our Campus</h3>
+                        <ul class="list">
+                            <li><a href="#">Kathmandu</a></li>
+                            <li><a href="#">Chitwan</a></li>
+                            <li><a href="#">Pokhara</a></li>
+                            <li><a href="#">Butwal</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-sm-7 pb-md-0 pb-1">
+                    <div class="footer-item footer-contact text-sm-left text-center">
+                        <h3 class="mb-xl-3 mb-lg-2 mb-1">Contact us</h3>
+                        <ul class="list">
+                            <li><a href="tel:97701298364">T: +977 01298364</a></li>
+                            <li>Monday to Friday: 9:00am - 5:00pm</li>
+                            <li><a href="#">View all contact options</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-5 pb-md-0 pb-1">
+                    <div class="footer-item social-icon text-sm-left text-center">
+                        <h3 class="mb-xl-3 mb-lg-2 mb-1">Follow us</h3>
+                        <ul class="list d-flex justify-content-sm-start justify-content-center">
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-end">
+                    <div class="col-lg-7 col-md-9 pb-md-0 pb-1">
+                        <div class="footer-bottom__item">
+                            <ul class="list d-sm-flex text-sm-left text-center">
+                                <li><a href="#">Copyright statement</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-3">
+                        <picture class="tile-icon__media text-md-right text-center">
+                            <source srcset="assets/images/windsor-logo.webp" type="image/webp">
+                            <source srcset="assets/images/windsor-logo.png" type="image/pmg">
+                            <img src="assets/images/windsor-logo.png" width="102" height="115" loading="lazy" alt="Partner logo">
+                        </picture>
+                    </div>
+                </div>
+                <span class="copyright text-center">Design by <a href="#">SunBi</a> </span>
+            </div>
+        </div>
     </footer> <!-- / .site-footer -->
 
 
@@ -503,6 +651,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="vendors/counter/jquery.countup.min.js"></script>
     <script src="vendors/counter/jquery.waypoints.min.js"></script>
+    <script src="vendors/slick/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

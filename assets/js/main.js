@@ -17,4 +17,39 @@ $(document).ready(function () {
         time: 3000,
         delay: 10,
     });
+
+    // slider-col-4
+    $('.slider-col-4').slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: false,
+        autoplay: true,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+              }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  adaptiveHeight: true,
+                    dots: true
+                }
+            }
+        ]
+    });
 });
