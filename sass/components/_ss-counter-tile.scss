@@ -1,0 +1,42 @@
+//counter-tile
+.counter-tile {
+    padding: 1.5rem 1rem;
+    height: 100%;
+
+    @include media-breakpoint-up(lg) {
+        padding: 3rem 1rem;
+    }
+
+    h2 {
+        @include font-size(1.875rem);
+        font-family: $font-oswald;
+        color: $white;
+        font-weight: 500;
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(2.5rem);
+        }
+
+        @include media-breakpoint-up(xl) {
+            @include font-size(3.4375rem);
+        }
+
+        small {
+            display: block;
+            @include font-size(1.25rem);
+            text-transform: capitalize;
+            margin-top: 1rem;
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(1.5625rem);
+                margin-top: 1.5rem;
+
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include font-size(1.875rem);
+                margin-top: 1.8rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.bordered-column {
+    background-color: rgba($black, 0.70);
+    padding: 3rem;
+
+
+    @include media-breakpoint-up(md) {
+        padding: 5.75rem 3.6875rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 7.75rem 4.6875rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 9.75rem 5.6875rem;
+    }
+
+    .row {
+        overflow: hidden;
+
+        [class*='col-'] {
+            border-right: 1px solid $dark-gray-1;
+            border-bottom: 1px solid $dark-gray-1;
+            right: -1px;
+            bottom: -1px;
+        }
+    }
+
+    &__content {
+        padding: 1.5rem;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            padding: 2rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 2rem 3rem;
+        }
+
+        h3 {
+            font-family: $font-oswald;
+            font-weight: 500;
+            line-height: 44.46px;
+            color: $dark-gray-1;
+            @include font-size(1.25rem);
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(1.5625rem);
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include font-size(1.875rem);
+            }
+        }
+    }
+}
