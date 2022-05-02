@@ -12441,6 +12441,14 @@ ol {
   color: #000;
   line-height: 34px;
   position: relative;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+@media (min-width: 992px) {
+  .border-info {
+    padding-right: 1.8125rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -12457,6 +12465,14 @@ ol {
   bottom: 0;
   width: 7px;
   background: #F7C03B;
+}
+
+.dark-bg {
+  background: #000;
+}
+
+.bg-gray {
+  background: #F4F4F4;
 }
 
 body {
@@ -13226,6 +13242,41 @@ iframe {
   }
 }
 
+.border-title--right h2 {
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .border-title--right h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .border-title--right h2 {
+    font-size: 1.875rem;
+  }
+}
+
+.border-title--right span {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .border-title--right span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .border-title--right span {
+    font-size: 1.875rem;
+    line-height: 44px;
+  }
+}
+
 .border-title--white {
   background: #000;
 }
@@ -13469,6 +13520,10 @@ iframe {
   list-style: none;
 }
 
+.card-icon {
+  transition: all .5s ease;
+}
+
 .card-icon [class*='icon-'] {
   color: #E9E9E9;
   font-size: 3.625rem;
@@ -13490,6 +13545,14 @@ iframe {
   .card-icon h6 {
     font-size: 1.5625rem;
   }
+}
+
+.card-icon:hover [class*='icon-'], .card-icon:active [class*='icon-'] {
+  color: #6c757d;
+}
+
+.card-icon:hover h6, .card-icon:active h6 {
+  color: #6c757d;
 }
 
 .card-media {
@@ -13781,16 +13844,29 @@ iframe {
   margin: 0 auto;
 }
 
+.section-title {
+  color: #fff;
+}
+
 .section-title h1 {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
-  color: #fff;
 }
 
 @media (min-width: 1200px) {
   .section-title h1 {
     font-size: 4.625rem;
   }
+}
+
+.section-title--alt {
+  color: #fff;
+}
+
+.section-title--alt .h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  transform: rotate(-90deg);
 }
 
 @media (min-width: 1200px) {
@@ -13821,6 +13897,59 @@ iframe {
     padding-left: 1.8125rem;
     font-size: 1.25rem;
   }
+}
+
+.two-col__info {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000;
+}
+
+@media (min-width: 1200px) {
+  .two-col__info {
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .two-col__info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .two-col__info {
+    text-align: start;
+  }
+}
+
+.two-col__info .h4 {
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .two-col__info .h4 {
+    font-size: 1.5625rem;
+    line-height: 2.3125rem;
+  }
+}
+
+.two-col__info small {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 1200px) {
+  .two-col__info small {
+    line-height: 1.375rem;
+  }
+}
+
+.two-col__info small i {
+  margin-right: .5rem;
 }
 
 .sec-history__desc {

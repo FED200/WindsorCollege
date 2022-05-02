@@ -115,6 +115,38 @@
             }
         }
 
+        &--right {
+
+            h2 {
+
+                @include font-size(1.125rem);
+
+                @include media-breakpoint-up(md) {
+                    @include font-size(1.5rem);
+                }
+
+                @include media-breakpoint-up(xl) {
+                    @include font-size(1.875rem);
+                }
+            }
+
+            span {
+                font-family: $font-oswald;
+                font-weight: 300;
+                @include font-size(1.125rem);
+
+                @include media-breakpoint-up(md) {
+                    @include font-size(1.5rem);
+                }
+
+                @include media-breakpoint-up(xl) {
+                    @include font-size(1.875rem);
+                    line-height: 44px;
+                }
+            }
+
+        }
+
         &--white {
             background: #000;
 

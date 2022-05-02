@@ -1,5 +1,7 @@
 .card {
     &-icon {
+        transition: all .5s ease;
+
         [class*='icon-'] {
             color: #E9E9E9;
             @include font-size(3.625rem);
@@ -18,7 +20,20 @@
                 @include font-size(1.5625rem);
             }
         }
+
+        &:hover,
+        &:active {
+
+            [class*='icon-'] {
+                color: $secondary;
+            }
+
+            h6 {
+                color: $secondary;
+            }
+        }
     }
+
 
     &-media {
         min-height: 350px;

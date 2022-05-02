@@ -1,4 +1,3 @@
-
 //tile-icon
 .tile-icon {
     img {
@@ -9,13 +8,25 @@
 //Gajendra
 
 .section-title {
+    color: $white;
+
     h1 {
         font-family: $font-oswald;
         font-weight: 600;
-        color: $white;
+
 
         @include media-breakpoint-up(xl) {
             @include font-size(4.625rem);
+        }
+    }
+
+    &--alt {
+        color: $white;
+
+        .h2 {
+            font-family: $font-oswald;
+            font-weight: 600;
+            transform: rotate(-90deg);
         }
     }
 }
@@ -46,6 +57,49 @@
         @include media-breakpoint-up(lg) {
             padding-left: 1.8125rem;
             @include font-size(1.25rem);
+        }
+    }
+
+    &__info {
+        font-family: $font-roboto;
+        font-weight: 300;
+        color: $black;
+
+        @include media-breakpoint-up(xl) {
+            @include font-size(.9375rem);
+            line-height: 1.625rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
+
+        @include media-breakpoint-down(xs) {
+            text-align: start;
+        }
+
+        .h4 {
+            font-family: $font-oswald;
+
+            @include media-breakpoint-up(xl) {
+                @include font-size(1.5625rem);
+                line-height: 2.3125rem;
+            }
+        }
+
+        small {
+            display: block;
+            font-family: $font-oswald;
+            font-weight: 300;
+            @include font-size(.9375rem);
+
+            @include media-breakpoint-up(xl) {
+                line-height: 1.375rem;
+            }
+
+            i {
+                margin-right: .5rem;
+            }
         }
     }
 
