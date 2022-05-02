@@ -90,3 +90,25 @@ iframe {
 		z-index: -1;
 	}
 }
+
+.gutter {
+	margin: 0 -10px;
+
+	[class*= "col-"] {
+		padding: 0 10px;
+	}
+}
+
+.black-overlay {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba($black, 0.70);
+	}
+}

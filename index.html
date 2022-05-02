@@ -2,43 +2,309 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300&display=swap"
-		rel="stylesheet">
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-	<link rel="stylesheet" href="style.css">
-	<title>Page title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="vendors/slick/slick.css">
+    <link rel="stylesheet" href="style.css">
+    <title>components</title>
 </head>
 
 <body>
-	<header id="header" class="site-header pb-3">
-		<nav class="site-nav">
+    <header id="header" class="site-header pb-3">
+        <nav class="site-nav">
 
-		</nav> <!-- / .site-nav -->
+        </nav> <!-- / .site-nav -->
 
-		<div class="phone-number">
-			<a href="tel:"></a>
-		</div> <!-- / .phone-number -->
+        <div class="phone-number">
+            <a href="tel:"></a>
+        </div> <!-- / .phone-number -->
 
-	</header> <!-- / .site-header -->
+    </header> <!-- / .site-header -->
 
-	<main id="main" class="site-content">
+    <main id="main" class="site-content">
+		<section class="home-banner bg-cover black-overlay">
+			<img src="assets/images/banner.jpg" alt="Banner image" width="1440" height="712" loading="lazy">
+			<div class="container">
+				<div class="home-banner__title text-center py-8">
+					<small>Find your path to</small>
+					<h1>Best Universities</h1>
+					<div class="btn-wrap">
+						<a href="#" class="btn btn-primary mr-1">Apply now</a>
+						<a href="#" class="btn btn-outline btn-outline--alt">enquire<i class="icon-play"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<div class="icon-box d-flex align-items-center justify-content-center">
+						<div class="icon"><i class="icon-book"></i></div>
+						<div class="text-wrap">
+							<h6>International Courses</h6>
+							<p>Explore a variety of fresh topics</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon-box d-flex align-items-center justify-content-center bg-blue">
+						<div class="icon"><i class="icon-winning-cup"></i></div>
+						<div class="text-wrap">
+							<h6>Expert Teachers</h6>
+							<p>Explore a variety of fresh topics</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="icon-box d-flex align-items-center justify-content-center bg-red">
+						<div class="icon"><i class="icon-circle"></i></div>
+						<div class="text-wrap">
+							<h6>Focus on Target</h6>
+							<p>Explore a variety of fresh topics</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>  <!-- / .home-banner -->
 
-	</main> <!-- / .site-content -->
+		<section class="pt-xl-9 pb-xl-8 py-lg-6 py-md-4 py-sm-3 py-2">
+			<div class="container">
+				<div class="row mb-xl-4 mb-md-3 mb-1">
+					<div class="col-lg-5 mb-1">
+						<div class="border-title">
+							<div class="border-title__content">
+								<h2>About <br> the College</h2>
+							</div>
+						</div><!-- / .border-title -->
+					</div>
+					<div class="col-lg-7 two-col__content">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo natus error sit.</p>
+						<div class="btn-wrap">
+							<a href="#" class="btn btn-outline btn-outline--lg">college overview<i class="icon-play"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>  <!-- / .section -->
 
-	<footer id="footer" class="site-footer">
+		<section>
+			<div class="cta-block">
+                <h2>Still wondering where to begin?</h2>
+                <div class="btn-wrap mt-lg-0 mt-1">
+                    <a href="#" class="btn btn-outline btn-outline--alt">study with us<i class="icon-play"></i></a>
+                    <a href="#" class="btn btn-outline btn-outline--alt">enquire<i class="icon-play"></i></a>
+                </div>
+            </div>  <!-- / .cta-block -->
+		</section>  <!-- / .section -->
 
-	</footer> <!-- / .site-footer -->
+        <section class="pt-xl-7 pb-xl-10 py-lg-4 py-sm-3 py-2">
+            <div class="container">
+                <div class="block-title text-center mb-xl-6 mb-lg-4 mb-2">
+                    <h2>Upcoming Events</h2>
+                </div>
+                <div class="row gutter">
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-1">
+                        <div class="card-event">
+                            <div class="card-event__media">
+                                <picture class="card-event__media">
+                                    <source srcset="assets/images/event01.webp" type="image/webp">
+                                    <source srcset="assets/images/event01.jpg" type="image/jpg">
+                                    <img src="assets/images/event01.jpg" width="419" height="424" loading="lazy" alt="Event image">
+                                </picture> <!-- / .card-event__media -->
+                                <div class="card-event__title">
+                                    <div class="time"><i class="icon-calander"></i>22 Feb, 2022</div>
+                                    <h3>Orientation Program</h3>
+                                </div>
+                            </div>
+                            <div class="card-event__body text-center">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn btn-primary btn-primary--sm">Know More</a>
+                                </div>
+                            </div> <!-- / .card-event__body -->
+                        </div> <!-- / ..card-event -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-1">
+                        <div class="card-event">
+                            <div class="card-event__media">
+                                <picture class="card-event__media">
+                                    <source srcset="assets/images/event02.webp" type="image/webp">
+                                    <source srcset="assets/images/event02.jpg" type="image/jpg">
+                                    <img src="assets/images/event02.jpg" width="419" height="424" loading="lazy" alt="Event image">
+                                </picture> <!-- / .card-event__media -->
+                                <div class="card-event__title">
+                                    <div class="time"><i class="icon-calander"></i>03 March , 2022</div>
+                                    <h3>Conference Meeting</h3>
+                                </div>
+                            </div>
+                            <div class="card-event__body text-center">
+                                <p>accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explict</p>
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn btn-primary btn-primary--sm">Know More</a>
+                                </div>
+                            </div> <!-- / .card-event__body -->
+                        </div> <!-- / ..card-event -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 m-auto">
+                        <div class="card-event">
+                            <div class="card-event__media">
+                                <picture class="card-event__media">
+                                    <source srcset="assets/images/event03.webp" type="image/webp">
+                                    <source srcset="assets/images/event03.jpg" type="image/jpg">
+                                    <img src="assets/images/event03.jpg" width="419" height="424" loading="lazy" alt="Event image">
+                                </picture> <!-- / .card-event__media -->
+                                <div class="card-event__title">
+                                    <div class="time"><i class="icon-calander"></i>05 March, 2022</div>
+                                    <h3>Farewell Program</h3>
+                                </div>
+                            </div>
+                            <div class="card-event__body text-center">
+                                <p>Inventore veritatis sed ut perspiciatis eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo natustotam</p>
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn btn-primary btn-primary--sm">Know More</a>
+                                </div>
+                            </div> <!-- / .card-event__body -->
+                        </div> <!-- / ..card-event -->
+                    </div>
+                </div>
+            </div>
+        </section>  <!-- / .section -->
+
+        <section class="pt-1 pb-xl-6 pb-lg-4 pb-sm-3 pb-2">
+            <div class="container">
+                <div class="block-title text-center pb-2">
+                    <h2>Our Global Partners</h2>
+                </div><!-- / .block-title -->
+                <div class="slider-col-4">
+                    <div class="item">
+                        <div class="tile-icon">
+                            <picture class="tile-icon__media mb-1">
+                                <source srcset="assets/images/cambridge.webp" type="image/webp">
+                                <source srcset="assets/images/cambridge.png" type="image/png">
+                                <img src="assets/images/cambridge.png" width="208" height="44" loading="lazy"
+                                    alt="Partner logo">
+                            </picture>
+                        </div> <!-- / .tile-icon -->
+                    </div>
+                    <div class="item">
+                        <div class="tile-icon">
+                            <picture class="tile-icon__media mb-1">
+                                <source srcset="assets/images/wisconsin.webp" type="image/webp">
+                                <source srcset="assets/images/wisconsin.png" type="image/png">
+                                <img src="assets/images/wisconsin.png" width="220" height="67" loading="lazy"
+                                    alt="Partner logo">
+                            </picture>
+                        </div> <!-- / .tile-icon -->
+                    </div>
+                    <div class="item">
+                        <div class="tile-icon">
+                            <picture class="tile-icon__media mb-1">
+                                <source srcset="assets/images/houston.webp" type="image/webp">
+                                <source srcset="assets/images/houston.png" type="image/png">
+                                <img src="assets/images/houston.png" width="166" height="44" loading="lazy"
+                                    alt="Partner logo">
+                            </picture>
+                        </div> <!-- / .tile-icon -->
+                    </div>
+                    <div class="item">
+                        <div class="tile-icon">
+                            <picture class="tile-icon__media mb-1">
+                                <source srcset="assets/images/west-virginia.webp" type="image/webp">
+                                <source srcset="assets/images/west-virginia.png" type="image/png">
+                                <img src="assets/images/west-virginia.png" width="258" height="39" loading="lazy"
+                                    alt="Partner logo">
+                            </picture>
+                        </div> <!-- / .tile-icon -->
+                    </div>
+                </div>
+            </div>
+        </section> <!-- / .section -->
+
+
+    </main> <!-- / .site-content -->
+
+    <footer id="footer" class="site-footer pt-xl-4 pt-sm-3 pt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-sm-7 pb-lg-0 pb-md-2 pb-1">
+                    <div class="footer-item text-sm-left text-center">
+                        <h3 class="mb-xl-3 mb-lg-2 mb-1">About</h3>
+                        <p>To be a world-class college in Nepal offering international qualifications equipping our
+                            graduates with the knowledge.</p>
+                    </div> <!-- / .footer-item -->
+                </div>
+                <div class="offset-xl-1 col-xl-2 col-lg-3 col-sm-5 pb-lg-0 pb-md-2 pb-1">
+                    <div class="footer-item text-sm-left text-center">
+                        <h3 class="mb-xl-3 mb-lg-2 mb-1">Our Campus</h3>
+                        <ul class="list">
+                            <li><a href="#">Kathmandu</a></li>
+                            <li><a href="#">Chitwan</a></li>
+                            <li><a href="#">Pokhara</a></li>
+                            <li><a href="#">Butwal</a></li>
+                        </ul>
+                    </div> <!-- / .footer-item -->
+                </div>
+                <div class="col-xl-4 col-lg-4 col-sm-7 pb-md-0 pb-1">
+                    <div class="footer-item footer-contact text-sm-left text-center">
+                        <h3 class="mb-xl-3 mb-lg-2 mb-1">Contact us</h3>
+                        <ul class="list">
+                            <li><a href="tel:97701298364">T: +977 01298364</a></li>
+                            <li>Monday to Friday: 9:00am - 5:00pm</li>
+                            <li><a href="#">View all contact options</a></li>
+                        </ul>
+                    </div> <!-- / .footer-item -->
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-5 pb-md-0 pb-1">
+                    <div class="footer-item social-icon text-sm-left text-center">
+                        <h3 class="mb-xl-3 mb-lg-2 mb-1">Follow us</h3>
+                        <ul class="list d-flex justify-content-sm-start justify-content-center">
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                        </ul>
+                    </div> <!-- / .footer-item -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-end">
+                    <div class="col-lg-7 col-md-9 pb-md-0 pb-1">
+                        <div class="footer-bottom__item">
+                            <ul class="list d-sm-flex text-sm-left text-center">
+                                <li><a href="#">Copyright statement</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>  <!-- / .footer-bottom__item -->
+                    </div>
+                    <div class="col-lg-5 col-md-3">
+                        <picture class="tile-icon__media text-md-right text-center">
+                            <source srcset="assets/images/windsor-logo.webp" type="image/webp">
+                            <source srcset="assets/images/windsor-logo.png" type="image/pmg">
+                            <img src="assets/images/windsor-logo.png" width="102" height="115" loading="lazy"
+                                alt="Partner logo">
+                        </picture>
+                    </div>
+                </div>
+                <span class="copyright text-center">Design by <a href="#">SunBi</a> </span>
+            </div>  <!-- / .footer-bottom -->
+        </div>
+    </footer> <!-- / .site-footer -->
 
 
 
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="vendors/counter/jquery.countup.min.js"></script>
+    <script src="vendors/counter/jquery.waypoints.min.js"></script>
+    <script src="vendors/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

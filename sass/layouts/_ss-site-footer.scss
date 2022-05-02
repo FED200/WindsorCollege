@@ -21,6 +21,11 @@
 
     a {
         color: $white;
+
+        &:hover {
+            text-decoration: none;
+            color: $red;
+        }
     }
 }
 
@@ -76,6 +81,11 @@
               
                 a {
                     border-bottom: 1px solid $white;
+
+                    &:hover {
+                        text-decoration: none;
+                        border-color: $red;
+                    }
                 }
             }
         }
