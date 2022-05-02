@@ -12430,13 +12430,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (min-width: 1400px) {
-  body {
-    font-size: 1.125rem;
-    line-height: 2;
-  }
-}
-
 a:focus {
   outline: none;
 }
@@ -12487,6 +12480,25 @@ picture {
 iframe {
   width: 100%;
   height: 100%;
+}
+
+.bg-gradient {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-gradient:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.06) 6%, black 99%, black 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.06) 6%, black 99%, black 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.06) 6%, black 99%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+  z-index: -1;
 }
 
 @media (min-width: 1400px) {
@@ -13160,6 +13172,54 @@ iframe {
 @media (min-width: 1200px) {
   .bordered-column__content h3 {
     font-size: 1.875rem;
+  }
+}
+
+.card-media {
+  min-height: 350px;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+  .card-media {
+    padding: 3rem 2rem;
+    min-height: 368px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-media {
+    padding: 4rem 2.5rem;
+    min-height: 468px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .card-media {
+    padding: 5.6875rem 3.6875rem;
+    min-height: 568px;
+  }
+}
+
+.card-media__info {
+  color: #fff;
+  line-height: 21.08px;
+  font-size: 0.75rem;
+}
+
+.card-media__info h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  .card-media__info h3 {
+    font-size: 1.5625rem;
+    margin-bottom: 2rem;
   }
 }
 
