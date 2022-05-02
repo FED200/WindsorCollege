@@ -10,8 +10,8 @@
     }
 
     .slick-active {
-        button{
-            background-color: $primary;
+        button {
+            background-color: $red;
         }
     }
 
@@ -41,7 +41,7 @@
         position: absolute;
         z-index: 5;
         transition: all .2s;
-        top: 46%; 
+        top: 46%;
         transform: translateY(-50%);
         width: 40px;
         height: 40px;
@@ -56,10 +56,10 @@
             height: 60px;
         }
 
-        @include media-breakpoint-down(sm) {
-            display: none!important;
-        }
-        
+        // @include media-breakpoint-down(sm) {
+        //     display: none!important;
+        // }
+
         &:focus {
             outline: 0;
         }
@@ -78,7 +78,7 @@
     }
 
     &-prev {
-      left: -92px;
+        left: -92px;
     }
 
     &-next {
@@ -91,5 +91,116 @@
 
     &-disabled {
         background-color: $white;
+    }
+}
+
+
+//courses-slider
+.courses {
+    &-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    &-slider {
+        @include media-breakpoint-down(md) {
+            padding-bottom: 45px;
+        }
+
+        &__item {
+
+            @include media-breakpoint-down(md) {
+                padding-bottom: 1rem;
+                padding: 0.5rem;
+            }
+        }
+
+        .slick {
+            &-arrow {
+                font-size: 0;
+                line-height: 1;
+                border: 0;
+                border-radius: 0px;
+                background-color: transparent;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                bottom: 0;
+                z-index: 5;
+                color: $white;
+                transition: all 0.3s ease-in-out;
+
+                // @include media-breakpoint-up(xl) {
+                //     width: 60px;
+                //     height: 60px;
+                // }
+
+                // @include media-breakpoint-down(md) {
+                //     margin: 0.2rem;
+                // }
+
+                &:focus,
+                &:hover {
+                    outline: 0;
+                }
+
+                &:before {
+                    content: ' ';
+                    font-family: 'icomoon';
+                    @include font-size(1rem);
+                    color: $white;
+                    font-weight: 400;
+                    // color: $soft-red-1;
+
+                    @include media-breakpoint-up(lg) {
+                        @include font-size(1.3375rem);
+                    }
+                }
+            }
+
+            &-prev {
+                // left: auto;
+                // right: 50.4%;
+
+                right: auto;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+
+
+                &:before {
+                    content: '\e90d';
+                }
+            }
+
+            &-next {
+                // right: auto;
+                // left: 50.4%;
+
+                right: 0;
+                left: auto;
+                top: 50%;
+                transform: translateY(-50%);
+
+                &:before {
+                    content: '\e90e';
+                }
+            }
+
+            &-track {
+                display: flex;
+            }
+
+            &-slide {
+                height: inherit;
+                position: relative;
+            }
+
+            // &-disabled{
+            //     background-color: rgba($white, 0.3);
+            // }
+        }
     }
 }

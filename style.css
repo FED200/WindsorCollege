@@ -12934,7 +12934,7 @@ iframe {
 }
 
 .slick-dots .slick-active button {
-  background-color: #007bff;
+  background-color: #B62033;
 }
 
 .slick-dots button {
@@ -12980,12 +12980,6 @@ iframe {
   }
 }
 
-@media (max-width: 767.98px) {
-  .slick-arrow {
-    display: none !important;
-  }
-}
-
 .slick-arrow:focus {
   outline: 0;
 }
@@ -13012,6 +13006,87 @@ iframe {
 
 .slick-disabled {
   background-color: #fff;
+}
+
+.courses-img img {
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .courses-slider {
+    padding-bottom: 45px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .courses-slider__item {
+    padding-bottom: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+.courses-slider .slick-arrow {
+  font-size: 0;
+  line-height: 1;
+  border: 0;
+  border-radius: 0px;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.courses-slider .slick-arrow:focus, .courses-slider .slick-arrow:hover {
+  outline: 0;
+}
+
+.courses-slider .slick-arrow:before {
+  content: ' ';
+  font-family: 'icomoon';
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .courses-slider .slick-arrow:before {
+    font-size: 1.3375rem;
+  }
+}
+
+.courses-slider .slick-prev {
+  right: auto;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.courses-slider .slick-prev:before {
+  content: '\e90d';
+}
+
+.courses-slider .slick-next {
+  right: 0;
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.courses-slider .slick-next:before {
+  content: '\e90e';
+}
+
+.courses-slider .slick-track {
+  display: flex;
+}
+
+.courses-slider .slick-slide {
+  height: inherit;
+  position: relative;
 }
 
 .border-text {
@@ -13417,12 +13492,243 @@ iframe {
   }
 }
 
+.site-header {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}
+
+@media (max-width: 991.98px) {
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+
+.site-header__top {
+  background-color: #B62033;
+}
+
+.site-header__top .header-top__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .site-header__top .header-top__content {
+    padding: 1rem;
+  }
+}
+
+.site-header__top .update-link {
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  .site-header__top .update-link {
+    font-size: 1.125rem;
+  }
+}
+
+.site-header__top .update-link:focus, .site-header__top .update-link:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 991.98px) {
+  .site-header__top .btn-wrap {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-header .navbar {
+    padding: 1.8rem 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-header .navbar-brand {
+    position: absolute;
+    top: -43px;
+    left: 0;
+  }
+}
+
+.site-header .navbar-brand img {
+  max-width: 50%;
+}
+
+@media (min-width: 768px) {
+  .site-header .navbar-brand img {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-header .navbar-brand img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-header .navbar-nav .nav-item {
+    margin-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-header .navbar-nav .nav-item {
+    margin-right: 2.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .site-header .navbar-nav .nav-item {
+    text-align: center;
+    background-color: #B62033;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.site-header .navbar-nav .nav-item.active .nav-link {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .site-header .navbar-nav .nav-item.active .nav-link {
+    color: #B62033;
+  }
+}
+
+.site-header .navbar-nav .nav-link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .site-header .navbar-nav .nav-link {
+    color: #000;
+  }
+}
+
+.site-header .navbar-nav .nav-link:focus, .site-header .navbar-nav .nav-link:hover {
+  color: #B62033;
+}
+
+.site-header .navbar-toggler {
+  padding: 0.25rem 0rem;
+  border: none;
+}
+
+.site-header .navbar-toggler span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #B62033;
+  transition: all 0.2s ease-in-out;
+}
+
+.site-header .navbar-toggler span:nth-child(2) {
+  margin: 6px 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.site-header .navbar-toggler span:first-child {
+  transform: none;
+}
+
+.site-header .navbar-toggler span:last-child {
+  transform: none;
+}
+
+.site-header .navbar-toggler:not(.collapsed) span:first-child {
+  transform: translate(3px, 3px) rotate(45deg);
+}
+
+.site-header .navbar-toggler:not(.collapsed) span:nth-child(2) {
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.site-header .navbar-toggler:not(.collapsed) span:last-child {
+  transform: translate(2px, -3px) rotate(-45deg);
+}
+
+@media (max-width: 991.98px) {
+  .site-header .navbar-collapse {
+    position: fixed;
+    left: -300px;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    transition: all .2s;
+    z-index: 100;
+    background-color: #fff;
+    padding: 3rem 1rem;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.19);
+  }
+}
+
+@media (max-width: 991.98px) and (max-width: 767.98px) {
+  .site-header .navbar-collapse {
+    width: 230px;
+  }
+}
+
+.site-header .navbar-collapse.show {
+  left: 0;
+}
+
+.site-header .navbar .btn-search {
+  height: 38px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: transparent;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+@media (min-width: 992px) {
+  .site-header .navbar .btn-search {
+    width: 38px;
+    border-radius: 50%;
+  }
+}
+
+.site-header .navbar .btn-search:focus, .site-header .navbar .btn-search:hover {
+  background-color: #B62033;
+  color: #000;
+}
+
 .card-media {
   min-height: 350px;
-  padding: 2rem 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -13441,7 +13747,7 @@ iframe {
 
 @media (min-width: 1400px) {
   .card-media {
-    padding: 5.6875rem 3.6875rem;
+    padding: 5.6875rem 3rem;
     min-height: 568px;
   }
 }

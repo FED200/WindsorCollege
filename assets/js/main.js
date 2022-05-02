@@ -25,35 +25,60 @@ $(document).ready(function () {
         slidesToScroll: 4,
         arrows: false,
         autoplay: true,
-        responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2,
-              }
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                }
             },
             {
                 breakpoint: 992,
                 settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                     dots: true
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  adaptiveHeight: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
                     dots: true
                 }
             }
         ]
     });
 
-   /* smooth scroll*/
+    //courses-slider
+    $('.courses-slider').slick({
+        infinite: false,
+        dots: false,
+        arrows: true,
+        slidesToShow: 3,
+        adaptiveHeight: true,
+        slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                }
+            }
+        ]
+    });
+
+    /* smooth scroll*/
     $('a.js-has-smooth[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
