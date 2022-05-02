@@ -13604,7 +13604,7 @@ iframe {
 }
 
 .site-header .navbar-nav .nav-item.active .nav-link {
-  color: #fff;
+  color: #000;
 }
 
 @media (min-width: 992px) {
@@ -13629,7 +13629,13 @@ iframe {
 }
 
 .site-header .navbar-nav .nav-link:focus, .site-header .navbar-nav .nav-link:hover {
-  color: #B62033;
+  color: #000;
+}
+
+@media (min-width: 992px) {
+  .site-header .navbar-nav .nav-link:focus, .site-header .navbar-nav .nav-link:hover {
+    color: #B62033;
+  }
 }
 
 .site-header .navbar-toggler {
