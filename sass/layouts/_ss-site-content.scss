@@ -46,3 +46,75 @@
         margin: 0 auto;
     }
 }
+
+//Gajendra
+
+.section-title {
+    h1 {
+        font-family: $font-oswald;
+        font-weight: 600;
+        color: $white;
+
+        @include media-breakpoint-up(xl) {
+            @include font-size(4.625rem);
+        }
+    }
+}
+
+.two-col {
+    &__content {
+
+        @include media-breakpoint-up(xl) {
+            @include font-size(1.25rem);
+        }
+
+        &-image {
+            @include media-breakpoint-up(lg) {
+                margin-right: -140px;
+            }
+
+
+            @include media-breakpoint-up(xl) {
+                margin-right: -80px;
+            }
+        }
+    }
+
+    &__desc {
+        padding: 0.5rem 0.5rem 0.5rem;
+        padding-left: 1rem;
+
+        @include media-breakpoint-up(lg) {
+            padding-left: 1.8125rem;
+            @include font-size(1.25rem);
+        }
+    }
+
+}
+
+.sec-history {
+    &__desc {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: start;
+
+        @include media-breakpoint-up(md) {
+            text-align: center;
+        }
+
+        h2 {
+            color: $black;
+            font-family: $font-oswald;
+            font-weight: 500;
+            line-height: 1.4;
+
+            @include media-breakpoint-up(xl) {
+                line-height: 4rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                @include font-size(1.5rem)
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.card {
+    &-icon {
+        [class*='icon-'] {
+            color: #E9E9E9;
+            @include font-size(3.625rem);
+
+            @include media-breakpoint-up(xl) {
+                @include font-size(4.5rem);
+            }
+        }
+
+        h6 {
+            font-family: $font-oswald;
+            font-weight: 500;
+            color: $white;
+
+            @include media-breakpoint-up(xl) {
+                 @include font-size(1.5625rem);
+            }
+        }
+    }
+
+}

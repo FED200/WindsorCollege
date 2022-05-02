@@ -73,3 +73,39 @@ ol {
 		font-weight: $i * 100;
 	}
 }
+
+.light-overlay {
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba($black, .8);
+		z-index: -1;
+	}
+}
+
+.border-info {
+	color: #000;
+	line-height: 34px;
+	position: relative;
+
+	@include media-breakpoint-up(xl) {
+		@include font-size(1.25rem);
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 7px;
+		background: $bright-orange;
+	}
+}
