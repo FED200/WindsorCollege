@@ -13447,9 +13447,9 @@ iframe {
   }
 }
 
-.cta-block {
+.cta-wrap {
   background-color: #B62033;
-  padding: 2.4375rem;
+  padding: 2.4375rem 0;
 }
 
 @media (max-width: 991.98px) {
@@ -13463,13 +13463,6 @@ iframe {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4.0625rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .cta-block {
-    padding: 2.4375rem 6.0625rem;
   }
 }
 
