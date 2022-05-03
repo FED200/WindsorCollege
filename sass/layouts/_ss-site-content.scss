@@ -104,6 +104,12 @@
         }
     }
 
+    &__media {
+        img {
+            width: 100%;
+        }
+    }
+
 }
 
 .sec-history {
@@ -132,6 +138,7 @@
         }
     }
 }
+
 //tabs
 .tabs {
     background-color: $light-gray-1;
@@ -197,6 +204,6 @@
 }
 
 //counter-wrap
-.counter-wrap{
+.counter-wrap {
     background-color: $black;
 }

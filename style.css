@@ -14016,6 +14016,10 @@ iframe {
   margin-right: .5rem;
 }
 
+.two-col__media img {
+  width: 100%;
+}
+
 .sec-history__desc {
   max-width: 900px;
   margin: 0 auto;
