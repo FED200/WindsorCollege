@@ -5,7 +5,7 @@
         // background-color: black;
         color: $white;
         position: relative;
-        max-width: 820px;
+        max-width: 768px;
 
         @include media-breakpoint-up(xl) {
             @include font-size(1.25rem);

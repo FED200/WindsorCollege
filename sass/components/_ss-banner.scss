@@ -1,15 +1,24 @@
 .banner {
-    &__desc {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 20rem;
+    &-inner {
+        @include media-breakpoint-down(md) {
+            margin-top: 5rem;
+        }
 
-        @include media-breakpoint-up(xl) {
-            min-height: 26.25rem;
+        @include media-breakpoint-down(sm) {
+            margin-top: 7rem;
+        }
+
+        &__desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 25rem;
+
+            @include media-breakpoint-up(xl) {
+                min-height: 26.25rem;
+            }
         }
     }
-
 }
 
 // home page banner
@@ -71,6 +80,7 @@
 
         .text-wrap {
             font-family: $font-roboto;
+
             h6 {
                 font-family: $font-oswald;
                 font-weight: 600;

@@ -12846,15 +12846,27 @@ iframe {
   border-color: transparent;
 }
 
-.banner__desc {
+@media (max-width: 991.98px) {
+  .banner-inner {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .banner-inner {
+    margin-top: 7rem;
+  }
+}
+
+.banner-inner__desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 20rem;
+  min-height: 25rem;
 }
 
 @media (min-width: 1200px) {
-  .banner__desc {
+  .banner-inner__desc {
     min-height: 26.25rem;
   }
 }
@@ -13125,7 +13137,7 @@ iframe {
 .border-text {
   color: #fff;
   position: relative;
-  max-width: 820px;
+  max-width: 768px;
 }
 
 @media (min-width: 1200px) {
