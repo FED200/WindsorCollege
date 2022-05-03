@@ -84,11 +84,11 @@
         &-nav {
             .nav-item {
                 @include media-breakpoint-up(lg) {
-                    margin-right: 1.5rem;
+                    margin-right: 0.6rem;
                 }
 
                 @include media-breakpoint-up(xl) {
-                    margin-right: 2.5rem;
+                    margin-right: 1.6rem;
                 }
 
                 @include media-breakpoint-down(md) {

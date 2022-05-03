@@ -12888,35 +12888,32 @@ textarea.form-control {
   display: flex;
   align-items: center;
   min-height: 20rem;
+  margin-top: 9.3rem;
+}
+
+@media (min-width: 576px) {
+  .banner-inner {
+    margin-top: 7.8rem;
+  }
 }
 
 @media (min-width: 768px) {
   .banner-inner {
     min-height: 22rem;
+    margin-top: 8.5rem;
   }
 }
 
 @media (min-width: 992px) {
   .banner-inner {
     min-height: 24rem;
+    margin-top: 0;
   }
 }
 
 @media (min-width: 1200px) {
   .banner-inner {
     min-height: 26.25rem;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .banner-inner {
-    margin-top: 8.5rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .banner-inner {
-    margin-top: 7.8rem;
   }
 }
 
@@ -13821,13 +13818,13 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .site-header .navbar-nav .nav-item {
-    margin-right: 1.5rem;
+    margin-right: 0.6rem;
   }
 }
 
 @media (min-width: 1200px) {
   .site-header .navbar-nav .nav-item {
-    margin-right: 2.5rem;
+    margin-right: 1.6rem;
   }
 }
 
@@ -14241,7 +14238,6 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .courses-title {
-    display: inline-block;
     background-color: #000;
     display: flex;
     align-items: center;

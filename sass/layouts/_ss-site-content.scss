@@ -270,7 +270,6 @@
     }
 
     @include media-breakpoint-up(lg) {
-        display: inline-block;
         background-color: $black;
         display: flex;
         align-items: center;
