@@ -12846,12 +12846,6 @@ iframe {
   border-color: transparent;
 }
 
-@media (min-width: 768px) {
-  .banner-mobile {
-    display: none;
-  }
-}
-
 .banner__desc {
   display: flex;
   flex-direction: column;
@@ -12862,69 +12856,6 @@ iframe {
 @media (min-width: 1200px) {
   .banner__desc {
     min-height: 26.25rem;
-  }
-}
-
-.banner-title {
-  color: #fff;
-  font-weight: 300;
-  line-height: 34px;
-  position: relative;
-  padding: 0.5rem 0.5rem 0.5rem;
-  padding-left: 1rem;
-  max-width: 600px;
-}
-
-@media (min-width: 992px) {
-  .banner-title {
-    padding-left: 1.8125rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .banner-title {
-    font-size: 1.25rem;
-  }
-}
-
-.banner-title::before {
-  position: absolute;
-  content: '';
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 7px;
-  background: #F7C03B;
-}
-
-.banner-title h2 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
-  font-size: 2.1rem;
-  text-transform: capitalize;
-}
-
-@media (min-width: 768px) {
-  .banner-title h2 {
-    font-size: 2.8rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .banner-title h2 {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .banner-title h2 {
-    font-size: 3.75rem;
-  }
-}
-
-@media (min-width: 1400px) {
-  .banner-title h2 {
-    font-size: 4.625rem;
   }
 }
 
@@ -13192,16 +13123,15 @@ iframe {
 }
 
 .border-text {
-  background-color: black;
   color: #fff;
-  line-height: 34px;
   position: relative;
-  max-width: 768px;
+  max-width: 820px;
 }
 
 @media (min-width: 1200px) {
   .border-text {
     font-size: 1.25rem;
+    line-height: 34px;
   }
 }
 
@@ -13993,6 +13923,7 @@ iframe {
 }
 
 .section-title--alt {
+  display: inline-block;
   color: #fff;
 }
 

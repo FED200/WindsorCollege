@@ -2,14 +2,14 @@
 .border {
 
     &-text {
-        background-color: black;
+        // background-color: black;
         color: $white;
-        line-height: 34px;
         position: relative;
-        max-width: 768px;
+        max-width: 820px;
 
         @include media-breakpoint-up(xl) {
             @include font-size(1.25rem);
+            line-height: 34px;
         }
 
         &::before {
