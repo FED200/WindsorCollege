@@ -14216,20 +14216,6 @@ textarea.form-control {
   margin: 0 auto;
 }
 
-.sec-class__desc h1 {
-  color: #000;
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-@media (min-width: 1200px) {
-  .sec-class__desc h1 {
-    line-height: 5.5625rem;
-    font-size: 3.75rem;
-  }
-}
-
 .tabs {
   background-color: #F0F0F0;
 }
