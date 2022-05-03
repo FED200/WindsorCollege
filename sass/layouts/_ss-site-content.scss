@@ -209,45 +209,92 @@
 }
 
 // contact-box {
-    .bg {
-        &-gray {
-            background-color: $gray-200;
-        }
+.bg {
+    &-gray {
+        background-color: $gray-200;
+    }
 
-        &-red {
-            background-color: $red;
+    &-red {
+        background-color: $red;
+    }
+}
+
+.contact-box {
+    padding: 38px 1rem;
+    font-size: 1.875rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+
+    @include media-breakpoint-up(lg) {
+        padding: 3.125rem 1rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 3.8125rem 1rem;
+    }
+
+    a {
+        color: $dark-gray-4;
+
+        &-hover {
+            text-decoration: none;
+            color: $red;
         }
     }
-    .contact-box {
-        padding: 38px 1rem;
-        font-size: 1.875rem;
-        font-family: "Oswald", sans-serif;
-        font-weight: 200;
+
+    &.bg-red {
+        a {
+            color: $white;
+
+            &:hover {
+                color: $dark-blue;
+            }
+        }
+    }
+}
+
+//our--courses
+.our-courses {
+    &__wrap {
+        @include media-breakpoint-up(lg) {
+            display: flex;
+        }
+    }
+}
+
+//.courses-title
+.courses-title {
+
+    @include media-breakpoint-down(md) {
+        text-align: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+        display: inline-block;
+        background-color: $black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 120px;
+    }
+
+    h3 {
+        text-transform: capitalize;
+        font-family: $font-oswald;
+        font-weight: 600;
+        @include font-size(1.5rem);
+        margin-bottom: 1rem;
 
         @include media-breakpoint-up(lg) {
-            padding: 3.125rem 1rem;
+            color: $white;
+            margin-bottom: 0;
+            transform: rotate(-90deg);
+            white-space: nowrap;
+            @include font-size(2.3rem);
         }
 
         @include media-breakpoint-up(xl) {
-            padding: 3.8125rem 1rem;
-        }
-
-        a {
-            color: $dark-gray-4;
-
-            &-hover {
-                text-decoration: none;
-                color: $red;
-            }
-        }
-
-        &.bg-red {
-            a {
-            color: $white;
-
-                &:hover {
-                    color: $dark-blue;
-                }
-            }
+            @include font-size(2.5rem);
         }
     }
+}

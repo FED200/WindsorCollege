@@ -14227,6 +14227,53 @@ textarea.form-control {
   color: #222B52;
 }
 
+@media (min-width: 992px) {
+  .our-courses__wrap {
+    display: flex;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .courses-title {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .courses-title {
+    display: inline-block;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 120px;
+  }
+}
+
+.courses-title h3 {
+  text-transform: capitalize;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .courses-title h3 {
+    color: #fff;
+    margin-bottom: 0;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .courses-title h3 {
+    font-size: 2.5rem;
+  }
+}
+
 .site-footer {
   background-color: #000;
 }
