@@ -113,6 +113,31 @@
                     }
                 }
             }
+
+            h3 {
+                font-family: $font-oswald;
+                font-weight: 600;
+                @include font-size(1.5rem);
+                text-transform: capitalize;
+
+                @include media-breakpoint-up(md) {
+                    @include font-size(1.875rem);
+                }
+
+                @include media-breakpoint-up(lg) {
+                    @include font-size(2.25rem);
+                }
+
+                @include media-breakpoint-up(xl) {
+                    @include font-size(3.125rem);
+                }
+
+                br {
+                    @include media-breakpoint-down(lg) {
+                        display: none;
+                    }
+                }
+            }
         }
 
         &--right {

@@ -139,6 +139,26 @@
     }
 }
 
+.sec-class {
+    &__desc {
+        max-width: 980px;
+        margin: 0 auto;
+
+        h1 {
+            color: $black;
+            font-family: $font-oswald;
+            font-weight: 600;
+            line-height: 1.4;
+
+            @include media-breakpoint-up(xl) {
+                line-height: 5.5625rem;
+                @include font-size(3.75rem)
+            }
+
+        }
+    }
+}
+
 //tabs
 .tabs {
     background-color: $light-gray-1;
