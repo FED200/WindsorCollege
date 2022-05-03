@@ -339,6 +339,9 @@
 
 //our--courses
 .our-courses {
+    .row{
+        flex: 1 1 0px;
+    }
     &__wrap {
         @include media-breakpoint-up(lg) {
             display: flex;
@@ -378,6 +381,10 @@
 
         @include media-breakpoint-up(xl) {
             @include font-size(2.5rem);
+        }
+
+        @media (min-width: 0\0) {
+            width: 100%;
         }
     }
 }

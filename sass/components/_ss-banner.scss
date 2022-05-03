@@ -86,6 +86,10 @@
         @include media-breakpoint-up(xl) {
             min-height: 26.25rem;
         }
+
+        @media (min-width: 0\0) {
+            height: 26.25rem;
+        }
        
     }
 }

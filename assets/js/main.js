@@ -106,3 +106,5 @@ $(window).resize(function () {
 
     siteContent.css("padding-top", headerHeight + 'px');
 });
+
+console.log('test');
