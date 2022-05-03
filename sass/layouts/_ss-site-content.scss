@@ -286,6 +286,29 @@
     }
 }
 
+//course
+.courses {
+    &-wrap {
+        position: relative;
+    }
+
+    &-title {
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &-slider__wrapper {
+
+        @include media-breakpoint-up(lg) {
+            padding-left: 120px;
+        }
+    }
+}
+
 //our--courses
 .our-courses {
     &__wrap {

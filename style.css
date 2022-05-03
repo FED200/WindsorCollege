@@ -14358,6 +14358,25 @@ textarea.form-control {
   color: #222B52;
 }
 
+.courses-wrap {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .courses-title {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .courses-slider__wrapper {
+    padding-left: 120px;
+  }
+}
+
 @media (min-width: 992px) {
   .our-courses__wrap {
     display: flex;
