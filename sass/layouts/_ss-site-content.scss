@@ -314,6 +314,7 @@
             font-weight: 600;
             @include font-size(1.5rem);
             margin-bottom: 1rem;
+            width: 100%;
     
             @include media-breakpoint-up(lg) {
                 color: $white;
