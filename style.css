@@ -12884,30 +12884,27 @@ textarea.form-control {
   resize: none;
 }
 
+@media (min-width: 992px) {
+  .site-content {
+    padding-top: 0 !important;
+  }
+}
+
 .banner-inner {
   display: flex;
   align-items: center;
   min-height: 20rem;
-  margin-top: 9.3rem;
-}
-
-@media (min-width: 576px) {
-  .banner-inner {
-    margin-top: 7.8rem;
-  }
 }
 
 @media (min-width: 768px) {
   .banner-inner {
     min-height: 22rem;
-    margin-top: 8.5rem;
   }
 }
 
 @media (min-width: 992px) {
   .banner-inner {
     min-height: 24rem;
-    margin-top: 0;
   }
 }
 

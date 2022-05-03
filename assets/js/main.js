@@ -92,3 +92,17 @@ $(document).ready(function () {
         }
     });
 });
+
+//site-content padding
+var headerHeight = $('.site-header').innerHeight();
+var siteContent = $('.site-content');
+
+siteContent.css("padding-top", headerHeight + 'px');
+
+$(window).resize(function () {
+    //site-content padding
+    var headerHeight = $('.site-header').innerHeight();
+    var siteContent = $('.site-content');
+
+    siteContent.css("padding-top", headerHeight + 'px');
+});

@@ -1,21 +1,23 @@
+.site-content{
+    @include media-breakpoint-up(lg){
+        padding-top: 0 !important;
+    }
+}
 .banner {
     &-inner {
         display: flex;
         align-items: center;
         min-height: 20rem;
-        margin-top: 9.3rem;
 
         @include media-breakpoint-up(sm) {
-            margin-top: 7.8rem;
         }
         @include media-breakpoint-up(md) {
             min-height: 22rem;
-            margin-top: 8.5rem;
         }
 
         @include media-breakpoint-up(lg) {
             min-height: 24rem;
-            margin-top: 0;
+            
         }
 
         @include media-breakpoint-up(xl) {
