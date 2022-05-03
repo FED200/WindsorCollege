@@ -28,7 +28,7 @@
 
     &__content {
         padding: 1.5rem;
-        text-align: center;
+        // text-align: center;
 
         @include media-breakpoint-up(lg) {
             padding: 2rem;
@@ -36,6 +36,7 @@
 
         @include media-breakpoint-up(xl) {
             padding: 2rem 3rem;
+            padding: 2.375rem 2rem;
         }
 
         h3 {

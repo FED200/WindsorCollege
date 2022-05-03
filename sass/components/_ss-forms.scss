@@ -1,0 +1,35 @@
+.form {
+    &-block {
+        padding: 100px;
+    }
+
+    &-group {
+        margin-bottom: 1rem;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 1.4375rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 1.875rem;
+        }
+    }
+
+    &-control {
+        height: 49px;
+        background-color: $dark-gray-3;
+        border: 0;
+        border-radius: 0;
+        padding: 15px 16px 16px 34px;
+
+        &::placeholder {
+            color: $gray-400;
+        }
+    }
+}
+
+textarea.form-control {
+    height: 121px;
+    min-height: 121px;
+    resize: none;
+  }

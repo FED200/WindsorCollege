@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="vendors/slick/slick.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="site-wrapper">
+
+        <header id="header" class="site-header">
+            <div class="site-header__top">
+                <div class="container">
+                    <div class="header-top__content">
+                        <a href="#" class="update-link">Visit our COVID-19 page for latest update - 11am, 20 February
+                            2022</a>
+                        <div class="btn-wrap">
+                            <a href="#" class="btn btn-outline">CONTACT US<i class="icon-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#"><img src="assets/images/header-logo.png" width="831" height="954"
+                            loading="lazy" alt="Header Logo"></a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Acedemics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ADMISSION & AID</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">LIFE AT WINDSOR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline mt-lg-0 mt-1">
+                            <button class="btn-search" type="submit"><i class="icon-search"></i></button>
+                        </form>
+                    </div>
+                </nav> <!-- / .site-nav -->
+            </div>
+
+            <div class="phone-number">
+                <a href="tel:"></a>
+            </div> <!-- / .phone-number -->
+
+        </header> <!-- / .site-header -->
+
+        <main id="main" class="site-content">
+
+            <section class="pt-xl-7 pb-xl-5 py-lg-4 py-sm-3 py-2">
+                <div class="block-title text-center mb-4">
+                    <h2>Key Contacts</h2>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-sm-6">
+                        <div class="contact-box bg-gray text-center">
+                            <h3>Campus Operator</h3>
+                            <a href="tel:97714237608">+977-14237608</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contact-box bg-red text-white text-center">
+                            <h3>Emergency Help</h3>
+                            <a href="tel:97714237608">+977-14237608</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-wrap">
+                <div class="row flex-row-reverse no-gutters">
+                    <div class="col-lg-5 form-wrap__img bg-cover">
+                        <img src="assets/images/map.png" alt="Map image" width="1200" height="1200" loading="lazy">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="form-block dark-bg">
+                            <form method="POST" action="mailer/index.php" id="form-id-1" class="validate form">
+                                <div class="form-header">
+                                    <div class="border-title text-white mb-xl-3 mb-2">
+                                        <div class="border-title__content">
+                                            <h2>Be in touch</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-section-0">
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Enter your full name" name="first-name" type="text" value="">
+                                        <div class="messages"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Enter your contact number" name="phone-number" type="text" value="">
+                                        <div class="messages"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Enter your email address (optional)" name="email" type="email" value="">
+                                        <div class="messages"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="What program are you interested in" name="last-name" type="text" value="">
+                                        <div class="messages"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Your message" name="what-should-we-know-to-help-you" cols="50" rows="10"></textarea>
+                                        <div class="messages"></div>
+                                    </div>
+                                </div>
+                                <div class="form-footer mt-xl-2 mt-1"> 
+                                    <button type="submit" class="submitButton btn btn-primary btn-primary--md">
+                                        <span class="spinner-border spinner-border loader" aria-hidden="true" style="display: none"></span>
+                                        Submit Form
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-wrap">
+                <div class="container">
+                    <div class="cta-block cta-block--alt text-center">
+                        <h2>If you have questions feel free to call <br> <a href="tel:+977014237455">+977-014237455</a>
+                        </h2>
+                    </div>
+                </div>
+            </section><!-- / .cta-wrap -->
+
+            <section class="pt-xl-7  pb-xl-6 py-lg-4 py-sm-3 py-2">
+                <div class="container">
+                    <div class="block-title text-center pb-xl-8 pb-lg-6 pb-sm-3 pb-2">
+                        <h2>Our Global Partners</h2>
+                    </div><!-- / .block-title -->
+                    <div class="slider-col-4">
+                        <div class="item">
+                            <div class="tile-icon">
+                                <picture class="tile-icon__media mb-1">
+                                    <source srcset="assets/images/cambridge.webp" type="image/webp">
+                                    <source srcset="assets/images/cambridge.png" type="image/png">
+                                    <img src="assets/images/cambridge.png" width="208" height="44" loading="lazy"
+                                        alt="Partner logo">
+                                </picture>
+                            </div> <!-- / .tile-icon -->
+                        </div>
+                        <div class="item">
+                            <div class="tile-icon">
+                                <picture class="tile-icon__media mb-1">
+                                    <source srcset="assets/images/wisconsin.webp" type="image/webp">
+                                    <source srcset="assets/images/wisconsin.png" type="image/png">
+                                    <img src="assets/images/wisconsin.png" width="220" height="67" loading="lazy"
+                                        alt="Partner logo">
+                                </picture>
+                            </div> <!-- / .tile-icon -->
+                        </div>
+                        <div class="item">
+                            <div class="tile-icon">
+                                <picture class="tile-icon__media mb-1">
+                                    <source srcset="assets/images/houston.webp" type="image/webp">
+                                    <source srcset="assets/images/houston.png" type="image/png">
+                                    <img src="assets/images/houston.png" width="166" height="44" loading="lazy"
+                                        alt="Partner logo">
+                                </picture>
+                            </div> <!-- / .tile-icon -->
+                        </div>
+                        <div class="item">
+                            <div class="tile-icon">
+                                <picture class="tile-icon__media mb-1">
+                                    <source srcset="assets/images/west-virginia.webp" type="image/webp">
+                                    <source srcset="assets/images/west-virginia.png" type="image/png">
+                                    <img src="assets/images/west-virginia.png" width="258" height="39" loading="lazy"
+                                        alt="Partner logo">
+                                </picture>
+                            </div> <!-- / .tile-icon -->
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- / .section -->
+        </main> <!-- / .site-content -->
+
+        <footer id="footer" class="site-footer pt-xl-4 pt-sm-3 pt-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-sm-7 pb-lg-0 pb-md-2 pb-1">
+                        <div class="footer-item text-sm-left text-center">
+                            <h3 class="mb-xl-3 mb-lg-2 mb-1">About</h3>
+                            <p>To be a world-class college in Nepal offering international qualifications equipping our
+                                graduates with the knowledge.</p>
+                        </div> <!-- / .footer-item -->
+                    </div>
+                    <div class="offset-xl-1 col-xl-2 col-lg-3 col-sm-5 pb-lg-0 pb-md-2 pb-1">
+                        <div class="footer-item text-sm-left text-center">
+                            <h3 class="mb-xl-3 mb-lg-2 mb-1">Our Campus</h3>
+                            <ul class="list">
+                                <li><a href="#">Kathmandu</a></li>
+                                <li><a href="#">Chitwan</a></li>
+                                <li><a href="#">Pokhara</a></li>
+                                <li><a href="#">Butwal</a></li>
+                            </ul>
+                        </div> <!-- / .footer-item -->
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-7 pb-md-0 pb-1">
+                        <div class="footer-item footer-contact text-sm-left text-center">
+                            <h3 class="mb-xl-3 mb-lg-2 mb-1">Contact us</h3>
+                            <ul class="list">
+                                <li><a href="tel:97701298364">T: +977 01298364</a></li>
+                                <li>Monday to Friday: 9:00am - 5:00pm</li>
+                                <li><a href="#">View all contact options</a></li>
+                            </ul>
+                        </div> <!-- / .footer-item -->
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-sm-5 pb-md-0 pb-1">
+                        <div class="footer-item social-icon text-sm-left text-center">
+                            <h3 class="mb-xl-3 mb-lg-2 mb-1">Follow us</h3>
+                            <ul class="list d-flex justify-content-sm-start justify-content-center">
+                                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-instagram"></i></a></li>
+                                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                            </ul>
+                        </div> <!-- / .footer-item -->
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row align-items-end">
+                        <div class="col-lg-7 col-md-9 pb-md-0 pb-1">
+                            <div class="footer-bottom__item">
+                                <ul class="list d-sm-flex text-sm-left text-center">
+                                    <li><a href="#">Copyright statement</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                </ul>
+                            </div>  <!-- / .footer-bottom__item -->
+                        </div>
+                        <div class="col-lg-5 col-md-3">
+                            <picture class="tile-icon__media text-md-right text-center">
+                                <source srcset="assets/images/windsor-logo.webp" type="image/webp">
+                                <source srcset="assets/images/windsor-logo.png" type="image/pmg">
+                                <img src="assets/images/windsor-logo.png" width="102" height="115" loading="lazy"
+                                    alt="Partner logo">
+                            </picture>
+                        </div>
+                    </div>
+                    <span class="copyright text-center">Design by <a href="#">SunBi</a> </span>
+                </div>  <!-- / .footer-bottom -->
+            </div>
+        </footer> <!-- / .site-footer -->
+
+    </div>
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="vendors/counter/jquery.countup.min.js"></script>
+    <script src="vendors/counter/jquery.waypoints.min.js"></script>
+    <script src="vendors/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
