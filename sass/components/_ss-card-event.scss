@@ -1,4 +1,6 @@
 .card-event {
+    height: 100%;
+    
     &__media {
         position: relative;
     }
@@ -39,7 +41,7 @@
     &__body {
         padding: 20px;
         color: $black;
-        background: antiquewhite;
+        // background: antiquewhite;
 
         @include media-breakpoint-up(lg) {
             padding: 1.75rem 1.5625rem;

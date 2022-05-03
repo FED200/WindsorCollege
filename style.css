@@ -13683,6 +13683,10 @@ iframe {
   }
 }
 
+.card-event {
+  height: 100%;
+}
+
 .card-event__media {
   position: relative;
 }
@@ -13719,7 +13723,6 @@ iframe {
 .card-event__body {
   padding: 20px;
   color: #000;
-  background: antiquewhite;
 }
 
 @media (min-width: 992px) {
@@ -14126,6 +14129,7 @@ iframe {
   color: #fff;
   font-size: 0.9375rem;
   margin-top: 17px;
+  margin-bottom: 11px;
   display: block;
 }
 
