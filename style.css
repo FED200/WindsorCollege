@@ -13818,13 +13818,13 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .site-header .navbar-nav .nav-item {
-    margin-right: 0.6rem;
+    margin-right: 2rem;
   }
 }
 
 @media (min-width: 1200px) {
   .site-header .navbar-nav .nav-item {
-    margin-right: 1.6rem;
+    margin-right: 2.5rem;
   }
 }
 
@@ -13843,6 +13843,12 @@ textarea.form-control {
 @media (min-width: 992px) {
   .site-header .navbar-nav .nav-item.active .nav-link {
     color: #B62033;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-header .navbar-nav .nav-item--hide {
+    display: none;
   }
 }
 
