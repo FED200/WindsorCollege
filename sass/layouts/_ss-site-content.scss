@@ -228,6 +228,32 @@
     background-color: $black;
 }
 
+//info
+.info {
+    position: relative;
+
+    &::before {
+
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            content: '';
+            background-color: rgba($black, 0.7);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+        }
+    }
+    &-block {
+        color: $white;
+
+        @include media-breakpoint-up(xl) {
+            flex: 0 0 41%;
+            max-width: 41%;
+        }
+    }
+}
+
 // contact-box {
 .bg {
     &-gray {
@@ -256,7 +282,7 @@
     a {
         color: $dark-gray-4;
 
-        &-hover {
+        &:hover {
             text-decoration: none;
             color: $red;
         }
@@ -314,6 +340,37 @@
 
         @include media-breakpoint-up(xl) {
             @include font-size(2.5rem);
+        }
+    }
+}
+
+//form-block
+.form {
+    &-block {
+        padding: 2rem 1rem;
+
+        @include media-breakpoint-up(md) {
+            padding: 2rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 78px 150px 65px 41px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 78px 180px 65px 54px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding: 78px 200px 65px 71px;
+        }
+    }
+
+    &-footer {
+        button {
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
         }
     }
 }

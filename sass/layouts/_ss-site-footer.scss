@@ -90,6 +90,19 @@
                 }
             }
         }
+
+        &__media {
+            position: relative;
+            img {
+                transition: all .2s;
+                display: inline-block;
+                &:hover {
+                    // transform: translateY(10px);
+                    transform: scale(1.1);
+                }
+            }
+            
+        }
     }
 }
 

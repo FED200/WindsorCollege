@@ -3,7 +3,70 @@
         padding-top: 0 !important;
     }
 }
+
+//banner
 .banner {
+    &__title {
+        // padding: 132px 0;
+        color: $white;
+        font-family: $font-oswald;
+        position: relative;
+
+        small {
+            @include font-size(2.1875rem);
+            font-weight: 200;
+        }
+
+        h1 {
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+
+    .icon-box {
+        background-color: rgba($bright-orange, 0.50);
+        // height: 224px;
+        padding: 3.25rem 1rem;
+        color: $white;
+
+        @include media-breakpoint-up(lg) {
+            padding: 3.875rem 1rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 4.5rem 1rem;
+        }
+
+        &.bg-blue {
+            background-color: rgba($dark-blue, 0.50);
+        }
+
+        &.bg-red {
+            background-color: rgba($red, 0.50);
+        }
+    }
+
+    .icon {
+        /* width: 80px; */
+        @include font-size(3.5rem);
+        padding-right: 27px;
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(5rem);
+            padding-right: 39px;
+        }
+    }
+
+    .text-wrap {
+        font-family: $font-roboto;
+
+        h6 {
+            font-family: $font-oswald;
+            font-weight: 600;
+        }
+    }
+
     &-inner {
         display: flex;
         align-items: center;
@@ -24,73 +87,5 @@
             min-height: 26.25rem;
         }
        
-    }
-}
-
-// home page banner
-.home {
-    &-banner {
-        // min-height: 700px;
-
-        &__title {
-            // padding: 132px 0;
-            color: $white;
-            font-family: $font-oswald;
-            position: relative;
-
-            small {
-                @include font-size(2.1875rem);
-                font-weight: 200;
-            }
-
-            h1 {
-                font-weight: 600;
-                text-transform: uppercase;
-            }
-        }
-
-
-        .icon-box {
-            background-color: rgba($bright-orange, 0.50);
-            // height: 224px;
-            padding: 3.25rem 1rem;
-            color: $white;
-
-            @include media-breakpoint-up(lg) {
-                padding: 3.875rem 1rem;
-            }
-
-            @include media-breakpoint-up(xl) {
-                padding: 4.5rem 1rem;
-            }
-
-            &.bg-blue {
-                background-color: rgba($dark-blue, 0.50);
-            }
-
-            &.bg-red {
-                background-color: rgba($red, 0.50);
-            }
-        }
-
-        .icon {
-            /* width: 80px; */
-            @include font-size(3.5rem);
-            padding-right: 27px;
-
-            @include media-breakpoint-up(lg) {
-                @include font-size(5rem);
-                padding-right: 39px;
-            }
-        }
-
-        .text-wrap {
-            font-family: $font-roboto;
-
-            h6 {
-                font-family: $font-oswald;
-                font-weight: 600;
-            }
-        }
     }
 }
