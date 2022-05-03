@@ -14358,21 +14358,56 @@ textarea.form-control {
   color: #222B52;
 }
 
-.courses-wrap {
+.course-wrap {
   position: relative;
 }
 
 @media (min-width: 992px) {
-  .courses-title {
+  .course-title {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
+    background-color: #000;
+    max-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .course-title {
+    text-align: center;
+  }
+}
+
+.course-title h3 {
+  text-transform: capitalize;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .course-title h3 {
+    color: #fff;
+    margin-bottom: 0;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .course-title h3 {
+    font-size: 2.5rem;
   }
 }
 
 @media (min-width: 992px) {
-  .courses-slider__wrapper {
+  .course-slider__wrapper {
     padding-left: 120px;
   }
 }
