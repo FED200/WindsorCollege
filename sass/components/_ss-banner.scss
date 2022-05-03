@@ -1,22 +1,28 @@
 .banner {
     &-inner {
+        display: flex;
+        align-items: center;
+        min-height: 20rem;
+
+
+        @include media-breakpoint-up(md) {
+            min-height: 22rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-height: 24rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-height: 26.25rem;
+        }
+
         @include media-breakpoint-down(md) {
-            margin-top: 5rem;
+            margin-top: 8.5rem;
         }
 
         @include media-breakpoint-down(sm) {
-            margin-top: 7rem;
-        }
-
-        &__desc {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-height: 25rem;
-
-            @include media-breakpoint-up(xl) {
-                min-height: 26.25rem;
-            }
+            margin-top: 7.8rem;
         }
     }
 }

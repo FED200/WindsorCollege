@@ -12846,28 +12846,39 @@ iframe {
   border-color: transparent;
 }
 
+.banner-inner {
+  display: flex;
+  align-items: center;
+  min-height: 20rem;
+}
+
+@media (min-width: 768px) {
+  .banner-inner {
+    min-height: 22rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-inner {
+    min-height: 24rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-inner {
+    min-height: 26.25rem;
+  }
+}
+
 @media (max-width: 991.98px) {
   .banner-inner {
-    margin-top: 5rem;
+    margin-top: 8.5rem;
   }
 }
 
 @media (max-width: 767.98px) {
   .banner-inner {
-    margin-top: 7rem;
-  }
-}
-
-.banner-inner__desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 25rem;
-}
-
-@media (min-width: 1200px) {
-  .banner-inner__desc {
-    min-height: 26.25rem;
+    margin-top: 7.8rem;
   }
 }
 
